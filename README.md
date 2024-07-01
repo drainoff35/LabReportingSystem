@@ -25,7 +25,7 @@ Bu proje, Java Spring kullanarak gelistirilmis bir web uygulamasidir. Uygulama, 
 
 ## MySql de bir db olusturunuz.
 ## Uygulamanin sorunsuz calisabilmesi icin Application.properties dosyasindaki gerekli kisimlari kendinize gore doldurunuz.
-- spring.datasource.url=jdbc:mysql://localhost:3306/tablename **olusturdugunuz tablonun adi**
+- spring.datasource.url=jdbc:mysql://localhost:3306/dbname **olusturdugunuz dbnin adi**
 - spring.datasource.username=username  **kendi bilgilerinizle doldurunuz**
 - spring.datasource.password=password  **kendi bilgilerinizle doldurunuz**
 
