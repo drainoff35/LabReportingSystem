@@ -25,9 +25,9 @@ Bu proje, Java Spring kullanarak gelistirilmis bir web uygulamasidir. Uygulama, 
 
 ## MySql de bir db olusturunuz.
 ## Uygulamanin sorunsuz calisabilmesi icin Application.properties dosyasindaki gerekli kisimlari kendinize gore doldurunuz.
-spring.datasource.url=jdbc:mysql://localhost:3306/tablename **olusturdugunuz tablonun adi**
-spring.datasource.username=username  **kendi bilgilerinizle doldurunuz**
-spring.datasource.password=password  **kendi bilgilerinizle doldurunuz**
+- spring.datasource.url=jdbc:mysql://localhost:3306/tablename **olusturdugunuz tablonun adi**
+- spring.datasource.username=username  **kendi bilgilerinizle doldurunuz**
+- spring.datasource.password=password  **kendi bilgilerinizle doldurunuz**
 
 
 ### API Endpoint'leri
@@ -74,12 +74,12 @@ spring.datasource.password=password  **kendi bilgilerinizle doldurunuz**
 }
 - seklinde JSON verimizi girip SEND e basin.
 
-**GET http://localhost:8080/api/patient tum patient verilerini getirir**
-**GET http://localhost:8080/api/patient/{id} verilen id'ye ait patienti getirir. or.http://localhost:8080/api/patient/12345678903**
-**GET http://localhost:8080/api/patient/search isim veya soyisime gore arama yapmamizi saglar. http://localhost:8080/api/patient/search?search=a seklinde istek gonderdigimizde isminde veya soyisimden a olan patientler ciktisini aliriz.**
-**DELETE http://localhost:8080/api/patient/delete/{id} verilen id'ye ait patienti siler. http://localhost:8080/api/patient/delete/12345678903**
-## PUT http://localhost:8080/api/patient/update/{id} ile verilen id ye sahip patienti guncelleyebiliriz. Url kismina http://localhost:8080/api/patient/update/12345678903 yazip Body'den asagidaki gibi JSON verisi yollayip Send butonuna basiniz.
-{
+- **GET http://localhost:8080/api/patient tum patient verilerini getirir**
+- **GET http://localhost:8080/api/patient/{id} verilen id'ye ait patienti getirir. or.http://localhost:8080/api/patient/12345678903**
+- **GET http://localhost:8080/api/patient/search isim veya soyisime gore arama yapmamizi saglar. http://localhost:8080/api/patient/search?search=a seklinde istek gonderdigimizde isminde veya soyisimden a olan patientler ciktisini aliriz.**
+- **DELETE http://localhost:8080/api/patient/delete/{id} verilen id'ye ait patienti siler. http://localhost:8080/api/patient/delete/12345678903**
+- ## PUT http://localhost:8080/api/patient/update/{id} ile verilen id ye sahip patienti guncelleyebiliriz. Url kismina http://localhost:8080/api/patient/update/12345678903 yazip Body'den asagidaki gibi JSON verisi yollayip Send butonuna basiniz.
+- {
    "patientName":"patient name updated",
    "patientSurname":"patient surname updated"
 }
@@ -96,12 +96,12 @@ spring.datasource.password=password  **kendi bilgilerinizle doldurunuz**
     "laborantSurname":"laborant surname"
 }
 - seklinde JSON verimizi girip SEND e basin.
-**GET http://localhost:8080/api/laborant tum laborant verilerini getirir**
-**GET http://localhost:8080/api/laborant/{id} verilen id'ye ait laboranti getirir. or.http://localhost:8080/api/laborant/1234567**
-**GET http://localhost:8080/api/laborant/search isim veya soyisime gore arama yapmamizi saglar. http://localhost:8080/api/laborant/search?search=a seklinde istek gonderdigimizde isminde veya soyisimden a olan laborantlar ciktisini aliriz.**
-**DELETE http://localhost:8080/api/laborant/delete/{id} verilen id'ye ait laboranti siler. http://localhost:8080/api/laborant/delete/1234567**
-## PUT http://localhost:8080/api/patient/update/{id} ile verilen id ye sahip patienti guncelleyebiliriz. Url kismina http://localhost:8080/api/patient/update/12345678903 yazip Body'den asagidaki gibi JSON verisi yollayip Send butonuna basiniz.
-{
+- **GET http://localhost:8080/api/laborant tum laborant verilerini getirir**
+- **GET http://localhost:8080/api/laborant/{id} verilen id'ye ait laboranti getirir. or.http://localhost:8080/api/laborant/1234567**
+- **GET http://localhost:8080/api/laborant/search isim veya soyisime gore arama yapmamizi saglar. http://localhost:8080/api/laborant/search?search=a seklinde istek gonderdigimizde isminde veya soyisimden a olan laborantlar ciktisini aliriz.**
+- **DELETE http://localhost:8080/api/laborant/delete/{id} verilen id'ye ait laboranti siler. http://localhost:8080/api/laborant/delete/1234567**
+- ## PUT http://localhost:8080/api/patient/update/{id} ile verilen id ye sahip patienti guncelleyebiliriz. Url kismina http://localhost:8080/api/patient/update/12345678903 yazip Body'den asagidaki gibi JSON verisi yollayip Send butonuna basiniz.
+- {
    "laborantName":"laborant name updated",
    "laborantSurname":"laborant surname updated"
 }
@@ -134,10 +134,10 @@ spring.datasource.password=password  **kendi bilgilerinizle doldurunuz**
     value: bilgisayarinizdan reporta ait fotografi secin.
 - seklinde verilerimizi girip SEND e basin.
 
-**GET http://localhost:8080/api/report tum report verilerini getirir**
-**GET http://localhost:8080/api/report/{id} verilen id'ye ait reportu getirir. or.http://localhost:8080/api/laborant/1**
-**DELETE http://localhost:8080/api/report/delete/{id} verilen id'ye ait reportu siler. http://localhost:8080/api/report/delete/1**
-## PUT http://localhost:8080/api/report/update/{id} ile verilen id ye sahip reportu guncelleyebiliriz. Url kismina http://localhost:8080/api/report/update/1 yazip Body'den asagidaki gibi JSON verisi yollayip Send butonuna basiniz.
+- **GET http://localhost:8080/api/report tum report verilerini getirir**
+- **GET http://localhost:8080/api/report/{id} verilen id'ye ait reportu getirir. or.http://localhost:8080/api/laborant/1**
+- **DELETE http://localhost:8080/api/report/delete/{id} verilen id'ye ait reportu siler. http://localhost:8080/api/report/delete/1**
+- ## PUT http://localhost:8080/api/report/update/{id} ile verilen id ye sahip reportu guncelleyebiliriz. Url kismina http://localhost:8080/api/report/update/1 yazip Body'den asagidaki gibi JSON verisi yollayip Send butonuna basiniz.
 {
     "diagnosticTitle":"updated title",
     "diagnosticDescription":"updated description",
@@ -146,7 +146,7 @@ spring.datasource.password=password  **kendi bilgilerinizle doldurunuz**
     }
 }
 
-**GET http://localhost:8080/api/report/details/{id} verilen id'ye sahip raporun detaylarini getirir. or. http://localhost:8080/api/report/details/1**
+- **GET http://localhost:8080/api/report/details/{id} verilen id'ye sahip raporun detaylarini getirir. or. http://localhost:8080/api/report/details/1**
 
 
 - Proje hakkinda herhangi bir sorunuz olursa **https://www.linkedin.com/in/kutaycetin35** adresinden bana ulasabilirsiniz.
