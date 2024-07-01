@@ -88,7 +88,7 @@ Bu proje, Java Spring kullanarak gelistirilmis bir web uygulamasidir. Uygulama, 
 ## Laborant olusturalim.
 - Url kismina http://localhost:8080/api/laborant/create yazip methodu POST olarak ayarlayin.
 - Authorization'a tiklayip Auth Type:Bearer Token olarak ayarladiktan sonra Token kismina oturum actigimizda bize verilen tokeni yapistiralim.
-## Eger diger methodlari farkli sekmede yapacaksaniz auth tokeni her yeni sekmede vermeniz gerekmektedir.
+
 - Daha sonra Body'e tiklayip raw'i secin.
 - {
     "laborantId":1234567, **7 Haneli olmak zorunda.**
@@ -110,7 +110,7 @@ Bu proje, Java Spring kullanarak gelistirilmis bir web uygulamasidir. Uygulama, 
 ## Report olusturabilmemiz icin laborant ve patient verilerimizin olmasi gerekmektedir.
 - Url kismina http://localhost:8080/api/report/create yazip methodu POST olarak ayarlayin.
 - Authorization'a tiklayip Auth Type:Bearer Token olarak ayarladiktan sonra Token kismina oturum actigimizda bize verilen tokeni yapistiralim.
-## Eger diger methodlari farkli sekmede yapacaksaniz auth tokeni her yeni sekmede vermeniz gerekmektedir.
+
 - Daha sonra Body'e tiklayip form-data'yi secin.
 - Report olustururken Report ve Reportun imagesi olacagi icin image yollayacagiz.
 - form-data'da 
