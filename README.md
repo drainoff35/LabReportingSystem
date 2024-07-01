@@ -38,8 +38,8 @@ Bu proje, Java Spring kullanarak gelistirilmis bir web uygulamasidir. Uygulama, 
 - **Admin Rolu:** Tum CRUD operasyonlarini gerceklestirebilir.
 - **Kullanici Rolu:** Tum CRUD operasyonlarini gerceklestirebilir fakat silme islemi yapamaz.
 
-- ## POSTMAN'i acalim.
-- ## Admin olarak oturum acmak icin 
+ ## POSTMAN'i acalim.
+ ## Admin olarak oturum acmak icin 
 
 - Url kismina http://localhost:8080/api/auth/signin yazip methodu GET olarak ayarlayin.
 - Daha sonra Body'e tiklayip raw'i secin.
@@ -49,7 +49,7 @@ Bu proje, Java Spring kullanarak gelistirilmis bir web uygulamasidir. Uygulama, 
 }
 - body e bunu yapistirip SEND e basin ve size verilecek olan auth token sonraki islemlerde yetki sahibi olabilmek icin kopyalayin.
 
-- ## User olusturmak icin
+ ## User olusturmak icin
 - Url kismina http://localhost:8080/api/auth/signup yazip methodu POST olarak ayarlayin.
 - Daha sonra Body'e tiklayip raw'i secin.
 - {
