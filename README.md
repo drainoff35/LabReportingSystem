@@ -78,7 +78,7 @@ Bu proje, Java Spring kullanarak gelistirilmis bir web uygulamasidir. Uygulama, 
 - **GET http://localhost:8080/api/patient/{id} verilen id'ye ait patienti getirir. or.http://localhost:8080/api/patient/12345678903**
 - **GET http://localhost:8080/api/patient/search isim veya soyisime gore arama yapmamizi saglar. http://localhost:8080/api/patient/search?search=a seklinde istek gonderdigimizde isminde veya soyisimden a olan patientler ciktisini aliriz.**
 - **DELETE http://localhost:8080/api/patient/delete/{id} verilen id'ye ait patienti siler. http://localhost:8080/api/patient/delete/12345678903**
-- ## PUT http://localhost:8080/api/patient/update/{id} ile verilen id ye sahip patienti guncelleyebiliriz. Url kismina http://localhost:8080/api/patient/update/12345678903 yazip Body'den asagidaki gibi JSON verisi yollayip Send butonuna basiniz.
+- **PUT http://localhost:8080/api/patient/update/{id} ile verilen id ye sahip patienti guncelleyebiliriz. Url kismina http://localhost:8080/api/patient/update/12345678903 yazip Body'den asagidaki gibi JSON verisi yollayip Send butonuna basiniz.**
 - {
    "patientName":"patient name updated",
    "patientSurname":"patient surname updated"
@@ -100,7 +100,7 @@ Bu proje, Java Spring kullanarak gelistirilmis bir web uygulamasidir. Uygulama, 
 - **GET http://localhost:8080/api/laborant/{id} verilen id'ye ait laboranti getirir. or.http://localhost:8080/api/laborant/1234567**
 - **GET http://localhost:8080/api/laborant/search isim veya soyisime gore arama yapmamizi saglar. http://localhost:8080/api/laborant/search?search=a seklinde istek gonderdigimizde isminde veya soyisimden a olan laborantlar ciktisini aliriz.**
 - **DELETE http://localhost:8080/api/laborant/delete/{id} verilen id'ye ait laboranti siler. http://localhost:8080/api/laborant/delete/1234567**
-- ## PUT http://localhost:8080/api/patient/update/{id} ile verilen id ye sahip patienti guncelleyebiliriz. Url kismina http://localhost:8080/api/patient/update/12345678903 yazip Body'den asagidaki gibi JSON verisi yollayip Send butonuna basiniz.
+- **PUT http://localhost:8080/api/patient/update/{id} ile verilen id ye sahip patienti guncelleyebiliriz. Url kismina http://localhost:8080/api/patient/update/12345678903 yazip Body'den asagidaki gibi JSON verisi yollayip Send butonuna basiniz.**
 - {
    "laborantName":"laborant name updated",
    "laborantSurname":"laborant surname updated"
@@ -137,8 +137,8 @@ Bu proje, Java Spring kullanarak gelistirilmis bir web uygulamasidir. Uygulama, 
 - **GET http://localhost:8080/api/report tum report verilerini getirir**
 - **GET http://localhost:8080/api/report/{id} verilen id'ye ait reportu getirir. or.http://localhost:8080/api/laborant/1**
 - **DELETE http://localhost:8080/api/report/delete/{id} verilen id'ye ait reportu siler. http://localhost:8080/api/report/delete/1**
-- ## PUT http://localhost:8080/api/report/update/{id} ile verilen id ye sahip reportu guncelleyebiliriz. Url kismina http://localhost:8080/api/report/update/1 yazip Body'den asagidaki gibi JSON verisi yollayip Send butonuna basiniz.
-{
+- **PUT http://localhost:8080/api/report/update/{id} ile verilen id ye sahip reportu guncelleyebiliriz. Url kismina http://localhost:8080/api/report/update/1 yazip Body'den asagidaki gibi JSON verisi yollayip Send butonuna basiniz.**
+- {
     "diagnosticTitle":"updated title",
     "diagnosticDescription":"updated description",
     "laborant":{
